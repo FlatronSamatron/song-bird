@@ -229,7 +229,7 @@
         margin-right: 0;
     }
     .card .rhap_container {
-        width: 350px !important;
+        width: 300px !important;
     }
     .rhap_volume-controls{
         top: 45px !important;
@@ -247,7 +247,7 @@
     }
 }
 
-@media (max-width:600px){
+@media (max-width:400px){
     .card .rhap_container {
         width: 250px !important;
     }
@@ -260,7 +260,7 @@
     }
 }
 
-@media (max-width:450px){
+/* @media (max-width:450px){
     .card .rhap_container {
         width: 180px !important;
     }
@@ -277,4 +277,4 @@
     .rhap_volume-bar-area{
         width: 50px !important;
     }
-}
+} */

@@ -104,7 +104,7 @@
     }
 }
 
-@media (max-width:600px){
+@media (max-width:400px){
     .random-bird .rhap_container {
         width: 250px !important;
         margin-bottom: 20px;
@@ -115,7 +115,7 @@
     }
 }
 
-@media (max-width:450px){
+/* @media (max-width:450px){
     .random-bird .rhap_container {
         width: 180px !important;
         margin-bottom: 20px;
@@ -141,4 +141,4 @@
     .score{
         margin: 0;
     }
-}
+} */
