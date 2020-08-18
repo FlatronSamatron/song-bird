@@ -1,0 +1,71 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img{
+    width: 200px;
+    height: 150px;
+    border-radius:15px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.card-body{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.names{
+    margin-right: auto;
+}
+
+.names h2, .names p{
+    border-bottom: 1px solid #555;
+    margin: 0;
+    padding: 15px 0 15px 5px;
+}
+
+.names p{
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.description{
+    margin: 20px;
+}
+
+.card .rhap_container {
+    background:#303030 !important;
+    box-shadow: none !important;
+    width: 300px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative;
+}
+
+.rhap_controls-section{
+    flex:none !important;
+}
+.rhap_time{
+    color: white !important;
+}
+
+.rhap_total-time{
+    position: absolute;
+    top: 50px;
+    right: 10px
+}
+
+#rhap_current-time{
+    position: absolute;
+    top: 50px;
+    margin-left: 15px;
+}
+
+.rhap_progress-filled{
+    background: linear-gradient(to right, rgb(0, 188, 140) 0%, rgb(61, 133, 140) 100%) !important;
+}

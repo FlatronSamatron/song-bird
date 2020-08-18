@@ -1,0 +1,35 @@
+.random-bird{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #303030;
+    border: 1px solid #555;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.random-biard-image{
+    width: 200px;
+    height: 155px;
+    border-radius: 10px;
+    margin: 0;
+    object-fit: cover;
+}
+
+.random-bird .rhap_container{
+    background:#303030 !important;
+    box-shadow: none !important;
+    width: 800px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative;
+}
+
+.name-bird{
+    font-size: 40px;
+    color:#fff;
+    margin: 0;
+}
