@@ -16,7 +16,7 @@ export default class extends React.Component{
               autoPlay={false}
               showJumpControls={false}
               customAdditionalControls={[]}
-              customVolumeControls={[]}
+            //   customVolumeControls={[]}
               style={{outline:'none'}}
               layout="horizontal-reverse"
             />

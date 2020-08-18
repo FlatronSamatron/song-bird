@@ -1,6 +1,7 @@
 import React from 'react'
 import birdsData from '../../services/birds-data/'
 import './app.css'
+import './media-query.css'
 
 import Header from '../header'
 import Answers from '../answers/answer-list'

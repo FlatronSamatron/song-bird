@@ -5,6 +5,7 @@
     justify-content: space-around;
     height: 40px;
     border-radius: 5px;
+    flex-wrap: wrap;
 }
 
 .logo-score{
@@ -48,4 +49,15 @@
 .score{
     font-size: 30px;
     color:#fff
+}
+
+@media (max-width:1200px){
+    .menu-item:first-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .menu-item:last-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 }

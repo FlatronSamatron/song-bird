@@ -69,3 +69,212 @@
 .rhap_progress-filled{
     background: linear-gradient(to right, rgb(0, 188, 140) 0%, rgb(61, 133, 140) 100%) !important;
 }
+
+.rhap_volume-controls{
+    position: absolute;
+    top: 45px;
+    left: 120px
+}
+
+.rhap_volume-bar-area{
+    width: 80px !important;
+}
+
+
+@media (max-width:1900px){
+    .card .rhap_container{
+        width: 250px !important;
+    }
+
+    .random-bird .rhap_container {
+        width: 700px !important;
+    }
+
+    .rhap_volume-controls {
+        left: 115px;
+    }
+
+    .rhap_volume-bar-area{
+        width: 40px !important;
+    }
+}
+
+@media (max-width:1730px){
+    .card .rhap_container{
+        width: 200px !important;
+    }
+
+    .random-bird .rhap_container {
+        width: 500px !important;
+    }
+
+    .card .rhap_volume-controls {
+        left: 70px;
+        top: 70px;
+    }
+
+    .rhap_volume-bar-area{
+        width: 80px !important;
+    }
+}
+
+@media (max-width:1500px){
+    .card-img{
+        width: 150px;
+        height: 100px;
+    }
+    .description {
+        margin: 50px 10px 0 10px;
+    }
+}
+
+@media (max-width:1400px){
+    .bird-info{
+        height: 550px;
+    }
+    .card-body{
+        flex-direction: column;
+    }
+    .names{
+        margin-right: 0;
+    }
+    .card .rhap_container {
+        width: 350px !important;
+    }
+    .rhap_volume-controls{
+        top: 45px !important;
+        left: 120px !important;
+    }
+    .card-img {
+        width: 250px;
+        height: 150px;
+    }
+    .description {
+        margin: 50px 35px 0 35px;
+    }
+}
+
+@media (max-width:1250px){
+    .card .rhap_container {
+        width: 250px !important;
+    }
+    .card .rhap_volume-controls {
+        top: 70px !important;
+        left: 90px !important;
+    }
+}
+
+@media (max-width:1200px){
+    .answer-block{
+        flex-direction: column;
+    }
+    .answers {
+        width: 100%;
+    }
+    .bird-info {
+        height: 312px;
+        width: 100%;
+        border-radius: 5px;
+        color: #fff;
+    }
+    .card-body{
+        flex-direction: row;
+    }
+    .names{
+        margin-right: auto;
+    }
+    .card .rhap_container {
+        width: 350px !important;
+    }
+    .card .rhap_volume-controls{
+        top: 45px !important;
+        left: 120px !important;
+    }
+    .description {
+        margin: 25px 20px 0 20px;
+    }
+    .bird-info{
+        margin-top: 25px;
+    }
+}
+
+@media (max-width:1100px){
+    .card .rhap_container {
+        width: 250px !important;
+    }
+    .card .rhap_volume-controls {
+        top: 70px !important;
+        left: 90px !important;
+    }
+}
+
+@media (max-width:950px){
+    .card .rhap_container {
+        width: 200px !important;
+    }
+    .card .rhap_volume-controls {
+        top: 70px !important;
+        left: 70px !important;
+    }
+}
+
+@media (max-width:850px){
+    .bird-info{
+        height: 550px;
+    }
+    .card-body{
+        flex-direction: column;
+    }
+    .names{
+        margin-right: 0;
+    }
+    .card .rhap_container {
+        width: 350px !important;
+    }
+    .rhap_volume-controls{
+        top: 45px !important;
+        left: 120px !important;
+    }
+    .card-img {
+        width: 250px;
+        height: 150px;
+    }
+    .description {
+        margin: 50px 35px 0 35px;
+    }
+    .names p, .names h2{
+        text-align: center;
+    }
+}
+
+@media (max-width:600px){
+    .card .rhap_container {
+        width: 250px !important;
+    }
+    .description {
+        margin: 50px 25px 0 25px;
+    }
+    .card-img {
+        width: 150px;
+        height: 100px;
+    }
+}
+
+@media (max-width:450px){
+    .card .rhap_container {
+        width: 180px !important;
+    }
+    .description {
+        margin: 50px 10px 0 10px;
+    }
+    .card-img {
+        width: 150px;
+        height: 100px;
+    }
+    .bird-info{
+        height: 600px;
+    }
+    .rhap_volume-bar-area{
+        width: 50px !important;
+    }
+}

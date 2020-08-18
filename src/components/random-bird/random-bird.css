@@ -33,3 +33,112 @@
     color:#fff;
     margin: 0;
 }
+
+@media (max-width:1800px){
+    .random-bird .rhap_container {
+        width: 700px !important;
+    }
+}
+
+@media (max-width:1600px){
+    .random-bird .rhap_container {
+        width: 650px !important;
+    }
+}
+
+@media (max-width:1500px){
+    .random-bird .rhap_container {
+        width: 600px !important;
+    }
+}
+
+@media (max-width:1400px){
+    .random-bird .rhap_container {
+        width: 500px !important;
+    }
+}
+
+@media (max-width:1300px){
+    .random-bird .rhap_container {
+        width: 400px !important;
+    }
+}
+
+@media (max-width:1100px){
+    .random-bird .rhap_container {
+        width: 300px !important;
+    }
+}
+
+@media (max-width:1100px){
+    .random-bird .rhap_container {
+        width: 250px !important;
+    }
+    .random-bird .rhap_volume-controls {
+        top: 70px !important;
+        left: 90px !important;
+    }
+}
+
+
+@media (max-width:850px){
+    .random-bird {
+        flex-direction: column;
+        height: 400px;
+    }
+    .random-bird .rhap_container {
+        width: 350px !important;
+    }  
+    .random-bird .rhap_volume-controls {
+        top: 45px !important;
+        left: 120px !important;
+    }
+    .name-bird{
+        text-align: center;
+    }
+    .logo {
+        width: 40%;
+    }
+    .random-bird{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:600px){
+    .random-bird .rhap_container {
+        width: 250px !important;
+        margin-bottom: 20px;
+    }  
+    .random-bird .rhap_volume-controls {
+        top: 70px !important;
+        left: 90px !important;
+    }
+}
+
+@media (max-width:450px){
+    .random-bird .rhap_container {
+        width: 180px !important;
+        margin-bottom: 20px;
+    }  
+    .random-bird .rhap_volume-controls {
+        top: 70px !important;
+        left: 70px !important;
+    }
+    .random-bird{
+        margin-top: 80px;
+        height: 300px;
+    }
+    .random-biard-image{
+        width: 150px;
+        height: 100px;
+    }
+    .logo-score{
+        flex-direction: column;
+    }
+    .logo {
+        width: 50%;
+    }
+    .score{
+        margin: 0;
+    }
+}
