@@ -46,6 +46,13 @@ export default class extends React.Component{
 
 
     render(){
+
+        let victory = <div className="victory">
+                        <h2>Поздравляем!</h2>
+                        <p>Вы прошли викторину и набрали {this.state.score} из 30 возможных баллов</p>
+                        <div className="victory-btn" onClick={()=>{this.setState({active:0,score:0})}}>Попробовать еще</div>
+                      </div>
+        
         
         return(
             <div className='container'>
@@ -54,25 +61,29 @@ export default class extends React.Component{
                 active={this.state.active}
                 score={this.state.score}
                 />
-                <RandomBird
-                bird={this.state.birds[this.state.active][this.state.rightAnswer]}
-                isGuess = {this.state.isGuess}
-                rightAnswer={this.state.rightAnswer}
-                />
-                <Answers 
-                birds={this.state.birds[this.state.active]}
-                rightAnswer={this.state.rightAnswer}
-                text={this.state.text}
-                isText={(text)=>{this.isText(text)}}
-                backGround = {this.state.backGround}
-                isGuess = {this.state.isGuess}
-                guessChange = {()=>{this.setState({isGuess:true})}}
-                scoreChange = {(scr)=>{this.setState({score: this.state.score + scr})}}
-                />
-                <NextButton 
-                nextLevel={()=>{this.nextLevel()}} 
-                isGuess = {this.state.isGuess}
-                />
+                {this.state.active>5 ? victory : 
+                <div>
+                    <RandomBird
+                    bird={this.state.birds[this.state.active][this.state.rightAnswer]}
+                    isGuess = {this.state.isGuess}
+                    rightAnswer={this.state.rightAnswer}
+                    />
+                    <Answers 
+                    birds={this.state.birds[this.state.active]}
+                    rightAnswer={this.state.rightAnswer}
+                    text={this.state.text}
+                    isText={(text)=>{this.isText(text)}}
+                    backGround = {this.state.backGround}
+                    isGuess = {this.state.isGuess}
+                    guessChange = {()=>{this.setState({isGuess:true})}}
+                    scoreChange = {(scr)=>{this.setState({score: this.state.score + scr})}}
+                    />
+                    <NextButton 
+                    nextLevel={()=>{this.nextLevel()}} 
+                    isGuess = {this.state.isGuess}
+                    />
+                </div>
+                }
             </div>
         )
     }
