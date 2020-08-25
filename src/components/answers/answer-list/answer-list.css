@@ -50,6 +50,7 @@
     border-radius: 50%;
     transition: .1s;
     background-color: #667;
+    pointer-events: none;
 }
 
 

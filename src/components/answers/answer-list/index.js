@@ -22,12 +22,11 @@ export default class extends React.PureComponent{
     infoRender = (bird, e, index) => {
 
         let audio;
+        let span = e.target.querySelector('span')
 
         if(this.props.text){
             this.props.isText(null)
         }
-
-        let span = e.target.querySelector('span')
 
         if(!this.props.isGuess){
             if( this.props.rightAnswer === index ){
@@ -48,7 +47,6 @@ export default class extends React.PureComponent{
                 })
             }
         }
-        
 
         this.setState({
             birdImg: bird.image,
