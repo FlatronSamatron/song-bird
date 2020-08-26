@@ -15,11 +15,31 @@ export default class extends React.PureComponent{
         birdAudio: null,
         birdDescription: null,
         text: 'Послушайте плеер. Выберите птицу из списка',
-        score: 5
+        score: 5,
+        isClick: []
     }
 
 
+    checkClick = (index) => {
+        let click = [...this.state.isClick,index];
+        this.setState({
+            isClick: this.props.text ? [] : click
+        })
+        return this.state.isClick.some( el => el === index)
+    }
+
     infoRender = (bird, e, index) => {
+
+        // if(this.props.text){
+        //     this.setState({
+        //         isClick: []
+        //     })
+        // }
+
+        console.log(this.state.isClick)
+
+        
+
 
         let audio;
         let span = e.target.querySelector('span')
@@ -28,7 +48,7 @@ export default class extends React.PureComponent{
             this.props.isText(null)
         }
 
-        if(!this.props.isGuess){
+        if(!this.props.isGuess && !this.checkClick(index)){
             if( this.props.rightAnswer === index ){
                 audio = new Audio(win);
                 audio.play();
