@@ -18,7 +18,7 @@ export default class extends React.Component{
         birds: birdsData,
         score: 0,
         backGround: true,
-        rightAnswer: 3,
+        rightAnswer:  Math.floor(Math.random() * (birdsData[0].length - 1)),
         isGuess: false,
         isClick: []
     }
