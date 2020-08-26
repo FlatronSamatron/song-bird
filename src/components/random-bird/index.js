@@ -27,9 +27,9 @@ export default class extends React.Component{
             />
         );
 
-        if(this.props.isGuess){
-            console.log(this.player)
-        }
+        // if(this.props.isGuess){
+        //     console.log(this.player)
+        // }
 
         return(
             <div className="random-bird">

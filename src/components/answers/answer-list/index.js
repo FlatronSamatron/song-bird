@@ -19,27 +19,21 @@ export default class extends React.PureComponent{
         isClick: []
     }
 
+    
+
 
     checkClick = (index) => {
         let click = [...this.state.isClick,index];
-        this.setState({
-            isClick: this.props.text ? [] : click
-        })
-        return this.state.isClick.some( el => el === index)
+
+        this.props.checkClick(click)
+
+        return this.props.isClick.some( el => el === index)
     }
+
 
     infoRender = (bird, e, index) => {
 
-        // if(this.props.text){
-        //     this.setState({
-        //         isClick: []
-        //     })
-        // }
-
-        console.log(this.state.isClick)
-
         
-
 
         let audio;
         let span = e.target.querySelector('span')

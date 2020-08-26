@@ -19,7 +19,8 @@ export default class extends React.Component{
         score: 0,
         backGround: true,
         rightAnswer: 3,
-        isGuess: false
+        isGuess: false,
+        isClick: []
     }
 
     isText = (text) => {
@@ -35,7 +36,8 @@ export default class extends React.Component{
             text: true,
             backGround: !this.state.backGround,
             rightAnswer: rightAnswer,
-            isGuess:false
+            isGuess:false,
+            isClick: []
         })
     }
 
@@ -79,6 +81,8 @@ export default class extends React.Component{
                     isGuess = {this.state.isGuess}
                     guessChange = {()=>{this.setState({isGuess:true})}}
                     scoreChange = {(scr)=>{this.setState({score: this.state.score + scr})}}
+                    isClick = {this.state.isClick}
+                    checkClick = {(click)=>{this.setState({isClick: click})}}
                     />
                     <NextButton 
                     nextLevel={()=>{this.nextLevel()}} 
